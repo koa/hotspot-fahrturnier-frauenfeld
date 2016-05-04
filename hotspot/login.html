@@ -1,53 +1,223 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+
+<!DOCTYPE html>
+<!-- HTML 5 -->
+<html lang="de-DE">
+
 <head>
-<title>internet hotspot > login</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="expires" content="-1" />
 <meta name="viewport"
 	content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+<title>Fahrturnier Frauenfeld | Der Fahrsportevent in der
+	Ostschweiz&#8230;</title>
 <style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl,
+	dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+	tbody, tfoot, thead, tr, th, td {
+	border: 0 none;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 100.01%;
+}
+
 body {
-	color: #737373;
-	font-size: 10px;
-	font-family: verdana;
+	border: 0 none;
+	color: #222;
+	font-family: "Carme", Arial, Verdana, Helvetica;
+	font-size: 0.9em;
 }
 
-textarea, input, select {
-	background-color: #FDFBFB;
-	border: 1px solid #BBBBBB;
-	padding: 2px;
-	margin: 1px;
-	font-size: 14px;
-	color: #808080;
+.clear {
+	clear: both;
 }
 
-a, a:link, a:visited, a:active {
-	color: #AAAAAA;
+#logo {
+	float: left;
+	margin: 5px 10px 10px;
+}
+
+#logo h1 {
+	color: #fff;
+	font-family: "Francois One", Arial, Verdana, Helvetica;
+	font-size: 2.5em;
+}
+
+#logo h2 {
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#logo a {
 	text-decoration: none;
-	font-size: 10px;
 }
 
-a:hover {
-	border-bottom: 1px dotted #c1c1c1;
-	color: #AAAAAA;
+#header, #foot_wrap {
+	background-color: #1155aa;
 }
 
-img {
-	border: none;
+#header {
+	margin: 0;
+	width: 100%;
 }
 
-td {
-	font-size: 14px;
-	color: #7A7A7A;
+#head {
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 1000px;
+}
+
+#foot_wrap {
+	border-top: 1px solid #ccc;
+	margin: 0;
+	width: 100%;
+}
+
+#wrap {
+	margin: 30px auto;
+	text-align: left;
+	width: 1000px;
+}
+
+#content {
+	float: left;
+	width: 640px;
+}
+
+#sidebar {
+	margin-left: 660px;
+	width: 340px;
+}
+
+#wrapper #wrap {
+	margin-bottom: 0;
+	margin-top: 16px;
+}
+
+#navi_wrap {
+	background: #d6d6d6 url("images/navi.png") repeat-x scroll 0 0;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+
+#navi {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#nav, #nav ul {
+	border-left: 1px solid #ddd;
+	float: left;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav li {
+	float: left;
+	position: relative;
+}
+
+#nav a {
+	border-right: 1px solid #ccc;
+	color: #000;
+	display: block;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 12px 17px;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	background: #ddd none repeat scroll 0 0;
+}
+
+#nav ul {
+	background: #fff none repeat scroll 0 0;
+	border: 4px solid #d6d6d6;
+	display: none;
+	position: absolute;
+	z-index: 99;
+}
+
+#nav ul a {
+	color: #000;
+	float: left;
+	padding: 12px 1em;
+	width: 15em;
+}
+
+#nav ul a:hover {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	color: #333 !important;
+	text-decoration: underline;
+}
+
+#footer_wrap {
+	background: rgba(0, 0, 0, 0) url("images/topnavi.png") repeat scroll 0 0;
+	clear: both;
+	width: 100%;
+}
+
+#footer {
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 1000px;
+}
+
+#footer a {
+	color: #fff !important;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+
+.post, .type-page, .type-attachment {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	margin: 0 0 20px;
+}
+
+.entry {
+	line-height: 1.5em;
+	padding: 5px 15px 15px;
+}
+
+.page-title {
+	font-family: "Francois One", Arial, Verdana, Helvetica;
+	font-size: 2.7em;
+	margin: 15px 10px 5px 15px;
+}
+
+body.custom-background {
+	background-attachment: scroll;
+	background-image: url("images/background.png");
+	background-position: left top;
+	background-repeat: repeat;
 }
 </style>
-
 </head>
 
-<body>
+<body
+	class="home page page-id-2 page-template-default custom-background">
 	$(if chap-id)
 	<form name="sendin" action="$(link-login-only)" method="post">
 		<input type="hidden" name="username" /> <input type="hidden"
@@ -69,21 +239,62 @@ td {
 	//-->
 	</script>
 	$(endif)
+	<div id="wrapper">
+		<div id="header">
+			<div id="topnavi_wrap">
+				<div id="topnavi"></div>
+				<div class="clear"></div>
+			</div>
 
-	<table width="100%" style="margin-top: 10%;">
-		<tr>
-			<td align="center" valign="middle">
-				<div class="notice" style="color: #c1c1c1; font-size: 30">
-					Lieber Besucher vom Fahrturnier Frauenfeld<br /> 
-					$(if trial == 'yes') Bitte, <a style="color: #FF8080; font-size: 30"
-						href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">hier
-						auswählen </a> für den Zugang zu den Ranglisten $(endif)
-				</div> <br /> $(if error)<br />
-				<div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)
-			</td>
-		</tr>
-	</table>
+			<div id="head">
+				<div id="logo">
+					<a href="http://www.fahrturnier-frauenfeld.ch/wxpx/"><h1>Fahrturnier
+							Frauenfeld</h1></a>
+					<h2>Der Fahrsportevent in der Ostschweiz&#8230;</h2>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
 
+		<div id="navi_wrap">
+			<div id="navi">
+				<ul id="nav" class="menu">
+					<li id="menu-item-55"
+						class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-55"><a
+						href="http://www.fahrturnier-frauenfeld.ch/wxpx/">Home</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div id="wrap">
+			<div id="content">
+				<div id="page-2" class="post-2 page type-page status-publish hentry">
+					<h2 class="page-title">Login</h2>
+					<div class="entry">
+						<p>Willkommen auf der Homepage zum Fahrsportevent, welcher
+							traditionellerweise jeweils vor Pfingsten auf der Frauenfelder
+							Allmend stattfindet.</p>
+						<p>
+							<a href="$(link-login-only)?dst=username=T-$(mac-esc)">Zugang
+								zu Ranglisten und Startlisten</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- end wraper -->
+	<div id="foot_wrap">
+		<div id="footer_wrap">
+			<div id="footer">
+				Fahrturnier Frauenfeld | alte Gillhofstrasse 1, CH-8560 Märstetten |
+				<a href="mailto:webmaster@fahrturnier-frauenfeld.ch">webmaster[at]fahrturnier-frauenfeld.ch</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
 	<script type="text/javascript">
 	<!--
 		document.login.username.focus();
