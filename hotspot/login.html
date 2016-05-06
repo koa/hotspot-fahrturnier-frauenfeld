@@ -31,13 +31,13 @@
       }
 
       html {
-        font-size: 16px;
+        font-size: 14px;
         font-family: "Carme",Arial,Verdana,Helvetica;
         color: #000;
       }
 
       h1 {
-        font-size: 36px;
+        font-size: 30px;
       }
 
       p {
@@ -50,7 +50,7 @@
       }
 
       .h1-small {
-        font-size: 16px;
+        font-size: 14px;
         display: block;
       }
 
@@ -71,9 +71,9 @@
       .header__inner,
       .content__inner,
       .footer__inner {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        padding: 40px 0;
+        padding: 30px 0;
       }
 
     	.content {
@@ -114,8 +114,32 @@
       }
 
       .login {
-        margin-top: 20px;
+        margin-top: 10px;
       }
+
+      @media screen and (min-width: 768px) {
+        html {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 36px;
+        }
+
+        .h1-small {
+          font-size: 16px;
+        }
+
+        .header__inner,
+        .content__inner,
+        .footer__inner {
+          width: 70%;
+          padding: 40px 0;
+        }
+
+        .login {
+          margin-top: 20px;
+        }
   	</style>
 
     $(if chap-id)
@@ -157,7 +181,7 @@
             Willkommen auf der Homepage zum Fahrsportevent, welcher traditionellerweise jeweils vor Pfingsten auf der Frauenfelder Allmend stattfindet.
           </p>
           <p>
-            <a class="btn login" href="$(link-login-only)?dst=$(link-status)&amp;username=T-$(mac-esc)">Zugang zu Ranglisten und Startlisten</a>
+            <a class="btn login" href="$(link-login-only)?dst=$(link-status)&amp;username=T-$(mac-esc)">Zu den Start- und Ranglisten</a>
           </p>
         </div>
       </div>
