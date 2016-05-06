@@ -1,117 +1,176 @@
 
 <!DOCTYPE html><!-- HTML 5 -->
 <html lang="de-DE">
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
-    <meta name="viewport"
-	content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-	<title>Fahrturnier Frauenfeld | Der Fahrsportevent in der Ostschweiz&#8230;</title>
-	<style type="text/css">
-	    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	    border: 0 none;
-	    font-family: inherit;
-	    font-size: 100%;
-	    font-style: inherit;
-	    font-weight: inherit;
-	    margin: 0;
-	    outline: 0 none;
-	    padding: 0;
-	    vertical-align: baseline;
-        }
-        html {
-        font-size: 100.01%;
-        }
-        body {
-        border: 0 none;
-        color: #222;
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+  	<title>Fahrturnier Frauenfeld | Der Fahrsportevent in der Ostschweiz&#8230;</title>
+  	<style type="text/css">
+	    html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+      acronym, address, big, cite, code, del, dfn, font, img,
+      ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,
+      dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td {
+  	    border: 0 none;
+  	    font-family: inherit;
+  	    font-size: 100%;
+  	    font-style: inherit;
+  	    font-weight: inherit;
+  	    margin: 0;
+  	    outline: 0 none;
+  	    padding: 0;
+  	    vertical-align: baseline;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      html {
+        font-size: 16px;
         font-family: "Carme",Arial,Verdana,Helvetica;
-        font-size: 20px;
+        color: #000;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        padding-bottom: 20px;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .h1-small {
+        font-size: 16px;
+        display: block;
+      }
+
+      .clear {
+        clear: both;
+	    }
+
+      .container {
+        min-height:100%;
+        position: relative;
+      }
+
+      .header {
+        color: #fff;
+        background-color: #1155aa;
+      }
+
+      .header__inner,
+      .content__inner,
+      .footer__inner {
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+
+    	.content {
+  	    background-color: #FFFFFF;
+  	    color: #000000;
+  	    display: block;
+  	    line-height: 1.5em;
+        padding-bottom: 100px;
+    	}
+
+	    .footer {
+        color: #fff;
+        background-color: #1155aa;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    	}
+
+      .footer__inner {
+        padding: 20px 0;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px;
+        background-color: #1155aa;
+        border:1px solid #092D59;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      .btn:hover {
+        background-color: #4989B8;
+        border-color: #346182;
+      }
+
+      .login {
+        margin-top: 20px;
+      }
+  	</style>
+
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+      <input type="hidden" name="username" />
+      <input type="hidden" name="password" />
+      <input type="hidden" name="dst" value="$(link-orig)" />
+      <input type="hidden" name="popup" value="true" />
+    </form>
+    
+    <script type="text/javascript" src="/md5.js"></script>
+    <script type="text/javascript">
+    <!--
+        function doLogin() {
+      document.sendin.username.value = document.login.username.value;
+      document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
         }
-        .clear {
-	        clear: both;
-	    }
-	    #header a {
-	        background-color: #2d353f;
-    	    color: #FFFFFF;
-    	    font-size: 150%;
-    	    display: block;
-    	    padding-top:20px;
-    	    padding-bottom:20px;
-    	    text-align: center;
-    	    text-decoration: none;
-    	}
-    	#content {
-    	    background-color: #FFFFFF;
-    	    color: #000000;
-    	    display: block;
-    	    line-height:1.5em;
-    	}
-	    #content h1 {
-    	    text-align:center;
-    	    display: block;
-    	    background-color: #2A67B3;
-    	    font-size: 200%;
-    	    margin:0px;
-    	    padding-top: 20px;
-    	    padding-bottom: 20px;
-    	    color: #D3DCE9;
-    	}
-	    #content p {
-	        padding: 20px;
-    	}
-	    #footer {
-	        background-color: #1155aa;
-    	    color: #FFFFFF;
-    	    padding-top:10px;
-    	    padding-bottom:10px;
-    	    text-align: center;
-    	    font-size: 50%;
-    	}
-    	#footer a {
-    	    text-decoration: none;
-    	    color: #FFFFFF;
-    	}
-	    </style>
-</head>
-<body>
-</body>
+    //-->
+    </script>
+    $(endif)
+  </head>
 
-$(if chap-id)
-	<form name="sendin" action="$(link-login-only)" method="post">
-		<input type="hidden" name="username" />
-		<input type="hidden" name="password" />
-		<input type="hidden" name="dst" value="$(link-orig)" />
-		<input type="hidden" name="popup" value="true" />
-	</form>
-	
-	<script type="text/javascript" src="/md5.js"></script>
-	<script type="text/javascript">
-	<!--
-	    function doLogin() {
-		document.sendin.username.value = document.login.username.value;
-		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
-		document.sendin.submit();
-		return false;
-	    }
-	//-->
-	</script>
-$(endif)
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__inner">
+          <h1>
+            Fahrturnier Frauenfeld
+            <span class="h1-small">Der Fahrsportevent in der Ostschweiz…</span>
+          </h1>
+        </div>
+      </div>
 
-<div id="header">
-    <a href="http://www.fahrturnier-frauenfeld.ch/">Fahrturnier Frauenfeld</a>
-</div>
+      <div class="content">
+        <div class="content__inner">
+          <p class="welcome-text">
+            Willkommen auf der Homepage zum Fahrsportevent, welcher traditionellerweise jeweils vor Pfingsten auf der Frauenfelder Allmend stattfindet.
+          </p>
+          <p>
+            <a class="btn login" href="$(link-login-only)?dst=$(link-status)&amp;username=T-$(mac-esc)">Zugang zu Ranglisten und Startlisten</a>
+          </p>
+        </div>
+      </div>
 
-<div id="content">
- <h1>Login</h1><!-- Titel der Seite -->
- <!-- Inhalt der Seite -->
-   <p>Willkommen auf der Homepage zum Fahrsportevent, welcher traditionellerweise jeweils vor Pfingsten auf der Frauenfelder Allmend stattfindet.</p>
-   <p>-&gt; <a href="$(link-login-only)?dst=$(link-status)&amp;username=T-$(mac-esc)">Zugang zu Ranglisten und Startlisten</a></p>
- <!-- Inhalt Ende der Seite -->
-</div>
-<div id="footer">
- Fahrturnier Frauenfeld | alte Gillhofstrasse 1, CH-8560 Märstetten<br>
-<a href="mailto:webmaster@fahrturnier-frauenfeld.ch">webmaster[at]fahrturnier-frauenfeld.ch</a>
-</div>
+      <div class="footer">
+        <div class="footer__inner">
+          Fahrturnier Frauenfeld | alte Gillhofstrasse 1, CH-8560 Märstetten<br>
+          <a href="mailto:webmaster@fahrturnier-frauenfeld.ch">webmaster[at]fahrturnier-frauenfeld.ch</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+
 </html>
